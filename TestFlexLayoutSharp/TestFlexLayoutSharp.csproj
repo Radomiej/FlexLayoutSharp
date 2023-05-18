@@ -12,7 +12,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\FlexLayoutSharp\FlexLayoutSharp.csproj">
+    <ProjectReference Include="..\FlexLayoutSharp23\FlexLayoutSharp23.csproj">
       <Name>FlexLayoutSharp</Name>
     </ProjectReference>
   </ItemGroup>
