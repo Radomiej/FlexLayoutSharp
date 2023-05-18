@@ -174,7 +174,7 @@ namespace FlexLayoutSharp
             // Instead of recomputing the entire layout every single time, we
             // cache some information to break early when nothing changed
             internal int generationCount;
-            internal Direction lastParentDirection = Direction.NeverUsed_1;
+            internal Direction lastParentDirection = Direction.Inherit;
             internal int nextCachedMeasurementsIndex = 0;
             internal readonly CachedMeasurement[] cachedMeasurements = new CachedMeasurement[Constant.MaxCachedResultCount]
             {
@@ -219,7 +219,7 @@ namespace FlexLayoutSharp
                 this.computedFlexBasis = float.NaN;
                 this.HadOverflow = false;
                 this.generationCount = 0;
-                this.lastParentDirection = Direction.NeverUsed_1;
+                this.lastParentDirection = Direction.Inherit;
                 this.nextCachedMeasurementsIndex = 0;
 
                 foreach (var cm in this.cachedMeasurements)

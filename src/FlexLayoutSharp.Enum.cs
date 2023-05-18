@@ -25,7 +25,6 @@ namespace FlexLayoutSharp
         Inherit = 0,
         LTR,
         RTL,
-        NeverUsed_1 = -1,
     }
 
     public enum Display
